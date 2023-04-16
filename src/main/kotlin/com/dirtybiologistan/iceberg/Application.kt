@@ -12,6 +12,7 @@ import io.ktor.server.tomcat.*
 import org.javacord.api.DiscordApi
 import org.javacord.api.DiscordApiBuilder
 import org.javacord.api.entity.intent.Intent
+import kotlin.concurrent.thread
 
 val api: DiscordApi = DiscordApiBuilder()
     .setToken(System.getenv("token_iceberg"))
@@ -22,13 +23,14 @@ fun main() {
     println("Hello, world!")
     println("Plouf, l'iceberg est là !")
 
-    api.updateActivity("Les votes sont en cours ! Utilisez /vote pour voter !")
+    thread {
+        api.updateActivity("Les votes sont en cours ! Utilisez /vote pour voter !")
+        api.addListener(ListenerSlashCommands())
+        loadAllCommands()
+    }
 
     embeddedServer(Tomcat, port = 8080, host = "0.0.0.0", module = Application::module)
         .start(wait = true)
-
-    api.addListener(ListenerSlashCommands())
-    loadAllCommands()
 }
 
 fun Application.module() {

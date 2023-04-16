@@ -1,5 +1,6 @@
 package com.dirtybiologistan.iceberg.discord
 
+import com.dirtybiologistan.iceberg.discord.commands.HelpCommand
 import org.javacord.api.entity.message.MessageFlag
 import org.javacord.api.event.interaction.SlashCommandCreateEvent
 import org.javacord.api.listener.interaction.SlashCommandCreateListener
@@ -7,6 +8,7 @@ import org.javacord.api.listener.interaction.SlashCommandCreateListener
 val commands = LinkedHashMap<String, ExecutableWithArguments>()
 
 fun loadAllCommands() {
+    HelpCommand()
     println("Loaded ${commands.size} commands")
 }
 
@@ -30,13 +32,7 @@ class ListenerSlashCommands : SlashCommandCreateListener {
             }
             val executableWithArguments = commands[commandName]
                 ?: throw IllegalStateException("Commande inconnue \"${commandName}\"")
-            if (executableWithArguments.botPerms == null) {
-                executableWithArguments.execute(slashCommand)
-            } else if (executableWithArguments.botPerms!!.isEmpty()) {
-                executableWithArguments.execute(slashCommand)
-            } else {
-                throw IllegalStateException("Vous n'avez pas les permissions pour utiliser cette commande")
-            }
+            executableWithArguments.execute(slashCommand)
         } catch (e: Exception) {
             slashCommand.createImmediateResponder()
                 .setContent("Une erreur est survenue. Vérifiez le contenu de la commande. Erreur = `${e.localizedMessage}`")
