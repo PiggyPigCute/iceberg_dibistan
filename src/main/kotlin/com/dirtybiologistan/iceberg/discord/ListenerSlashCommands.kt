@@ -10,6 +10,9 @@ val commands = LinkedHashMap<String, ExecutableWithArguments>()
 fun loadAllCommands() {
     HelpCommand()
     println("Loaded ${commands.size} commands")
+    for (command in commands) {
+        println("Loaded command ${command.key}")
+    }
 }
 
 class ListenerSlashCommands : SlashCommandCreateListener {

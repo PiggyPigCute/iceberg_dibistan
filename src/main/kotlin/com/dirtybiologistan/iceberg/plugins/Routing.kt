@@ -1,5 +1,6 @@
 package com.dirtybiologistan.iceberg.plugins
 
+import com.dirtybiologistan.iceberg.engine.proposals
 import io.ktor.server.routing.*
 import io.ktor.server.response.*
 import io.ktor.server.http.content.*
@@ -9,7 +10,7 @@ fun Application.configureRouting() {
 
     routing {
         get("/") {
-            call.respondText("Hello World!")
+            call.respondText("Hello World! " + proposals.random())
         }
         // Static plugin. Try to access `/static/index.html`
         static("/static") {
