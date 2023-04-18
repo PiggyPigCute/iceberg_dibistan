@@ -1,20 +1,20 @@
 package com.dirtybiologistan.iceberg.plugins
 
-import com.dirtybiologistan.iceberg.engine.proposals
-import io.ktor.server.routing.*
-import io.ktor.server.response.*
-import io.ktor.server.http.content.*
+import io.ktor.http.ContentDisposition.Companion.File
 import io.ktor.server.application.*
+import io.ktor.server.http.content.*
+import io.ktor.server.response.*
+import io.ktor.server.routing.*
+import java.io.File
+
+val path = Application::class.java.classLoader.getResource("/")
 
 fun Application.configureRouting() {
-
     routing {
         get("/") {
-            call.respondText("Hello World! " + proposals.random())
         }
-        // Static plugin. Try to access `/static/index.html`
-        static("/static") {
-            resources("static")
+        get("/index.html") {
+            call.respondRedirect("/")
         }
     }
 }
