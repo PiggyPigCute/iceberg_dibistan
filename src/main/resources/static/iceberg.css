@@ -1,5 +1,18 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Iceberg', 'Iceland', sans-serif;
+    background: #CDF5FE;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 .center_child {
@@ -8,6 +21,36 @@ body {
     align-items: center;
 }
 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons a {
+    background: #016980;
+    border-radius: 6px;
+    margin: 3%;
+    padding: 3%;
+}
+
 .debut_page {
     margin-top: 3em;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    width: 50%;
+    max-width: 800px;
+}
+
+.titres {
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    color: #00045F;
+}
+
+h2 {
+    color: #002C6F;
 }
