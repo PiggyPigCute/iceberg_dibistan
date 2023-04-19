@@ -1,0 +1,13 @@
+body {
+    font-family: 'Iceberg', 'Iceland', sans-serif;
+}
+
+.center_child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.debut_page {
+    margin-top: 3em;
+}
