@@ -23,7 +23,9 @@ p {
 
 .buttons {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .buttons a {
@@ -38,8 +40,8 @@ p {
     justify-content: center;
     align-items: center;
     min-width: 200px;
-    width: 50%;
-    max-width: 800px;
+    width: 750px;
+    max-width: 90%;
 }
 
 .titres {
@@ -49,8 +51,26 @@ p {
 
 h1 {
     color: #00045F;
+    font-size: 2em;
 }
 
 h2 {
     color: #002C6F;
+    font-size: 1.5em;
+}
+
+.elements {
+    position: absolute;
+    margin: 10% 0 0 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.water_over {
+    width: 100%;
+    padding: 0;
+    margin: 10% 0 0 0;
 }
