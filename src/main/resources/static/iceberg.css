@@ -59,18 +59,69 @@ h2 {
     font-size: 1.5em;
 }
 
-.elements {
+.iceberg_parent {
     position: absolute;
-    margin: 10% 0 0 0;
+    margin: 10em 0 0 0;
+    top: 0;
+    left: 0;
+    /* in the background */
+    z-index: -1;
+    width: 100%;
+}
+
+.water_before {
+    position: absolute;
+    margin-top: 21em;
+    height: 1em;
+    width: 100%;
+    background: #66E3FFCC;
+    z-index: -2;
+    top: 0;
 }
 
 img {
-    width: 100%;
+    min-width: 90%;
+    width: 90%;
+    min-height: 1600px;
     height: auto;
 }
 
+.water_after {
+    position: absolute;
+    margin-top: 20em;
+    height: 1em;
+    width: 100%;
+    background: #66E3FFCC;
+    top: 0;
+}
+
 .water_over {
+    position: absolute;
     width: 100%;
     padding: 0;
-    margin: 10% 0 0 0;
+    top: 0;
+    left: 0;
+    margin: 20em 0 0 0;
+    z-index: 2;
+}
+
+.water_over * {
+    height: 600px;
+    width: 100%;
+}
+
+.water1 {
+    background: #0036BF66;
+}
+
+.water2 {
+    background: #0036BFB2;
+}
+
+.water3 {
+    background: #002584B2;
+}
+
+.water4 {
+    background: #001959CC;
 }
