@@ -71,7 +71,7 @@ h2 {
 
 .water_before {
     position: absolute;
-    margin-top: 21em;
+    margin-top: 31em;
     height: 1em;
     width: 100%;
     background: #66E3FFCC;
@@ -80,15 +80,17 @@ h2 {
 }
 
 img {
-    min-width: 90%;
-    width: 90%;
-    min-height: 1600px;
+    min-width: 50%;
+    width: auto;
+    max-width: 95%;
+    min-height: 120em;
     height: auto;
+    max-height: 135em;
 }
 
 .water_after {
     position: absolute;
-    margin-top: 20em;
+    margin-top: 30em;
     height: 1em;
     width: 100%;
     background: #66E3FFCC;
@@ -101,12 +103,12 @@ img {
     padding: 0;
     top: 0;
     left: 0;
-    margin: 20em 0 0 0;
+    margin: 30em 0 0 0;
     z-index: 2;
 }
 
 .water_over * {
-    height: 600px;
+    height: 30em;
     width: 100%;
 }
 
