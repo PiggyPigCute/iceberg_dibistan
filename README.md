@@ -19,4 +19,20 @@ We can add propositions later.
 
 The program select 2 propositions.
 
-The website ask if the user better know proposition 1 than proposition 2, or proposition 2 than proposition 1. ...
+The website ask if the user better know proposition 1 than proposition 2, or proposition 2 than proposition 1. User can also skip.
+
+### Server side
+
+The answer add 1 (or -1) to the link between the propositions. The link is oriented.
+
+## Step 2 - transform data
+
+If there is cycles, -1 to all links in the cycle.
+
+## Step 3 - analyse data
+
+We count a many path end to each node and rank propositions.
+
+## Step 4 - show
+
+
