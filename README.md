@@ -1,7 +1,6 @@
-
 # iceberg_dibistan
 
-Website and Discord bot for Dibistan's Iceberg. Can be fork to create another iceberg. An iceberg rank all references to a world by there celebrity.
+Website and Discord bot for Dibistan's Iceberg. Can be forked to create another iceberg. An iceberg ranks all references to a world according to their celebrity.
 
 You can find the website at ... (not open yet).
 
@@ -9,7 +8,7 @@ You can find the website at ... (not open yet).
 
 ## Step 0 - Propositions
 
-A proposition is a reference to Dibistan's world. All propositions are in a .txt file (one per line). At the beginning the program read the file, and save all propositions in a database.
+A proposition is a reference to Dibistan's world. All propositions are in a .txt file (one per line). At the beginning, the program read the file, and save all propositions in a database.
 
 We can add propositions later.
 
@@ -19,20 +18,20 @@ We can add propositions later.
 
 The program select 2 propositions.
 
-The website ask if the user better know proposition 1 than proposition 2, or proposition 2 than proposition 1. User can also skip.
+The website asks if the user knows proposition 1 better than proposition 2, or proposition 2 better than proposition 1. User can also skip.
 
 ### Server side
 
-The answer add 1 (or -1) to the link between the propositions. The link is oriented.
+The server adjusts the link between the two propositions based on the answer. The link is oriented and has a numerical coefficient. If the coefficient is negative, the orientation will change, resulting in a positive coefficient.
 
 ## Step 2 - transform data
 
-If there is cycles, -1 to all links in the cycle.
+If there are cycles, -1 to all links in the cycle.
 
-## Step 3 - analyse data
+## Step 3 - analyze data
 
-We count a many path end to each node and rank propositions.
+We count the number of paths that end at each node and then rank the propositions.
 
 ## Step 4 - show
 
-
+We can now show the result. If a new vote or proposition arrives, we MUST use the old database, without step 2, and go back to step 1.
