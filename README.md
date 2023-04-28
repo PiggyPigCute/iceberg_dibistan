@@ -26,7 +26,7 @@ The server adjusts the link between the two propositions based on the answer. Th
 
 ## Step 2 - transform data
 
-If there are cycles, -1 to all links in the cycle.
+If there are cycles, -1 to all links in the cycle. We can detect cycles recursively.
 
 ## Step 3 - analyze data
 
