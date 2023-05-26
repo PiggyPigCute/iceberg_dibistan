@@ -79,7 +79,7 @@ h2 {
     top: 0;
 }
 
-img {
+img.iceberg {
     min-width: 50%;
     width: auto;
     max-width: 95%;
@@ -97,7 +97,7 @@ img {
     top: 0;
 }
 
-.water_over {
+.fishes {
     position: absolute;
     width: 100%;
     padding: 0;
@@ -105,6 +105,22 @@ img {
     left: 0;
     margin: 30em 0 0 0;
     z-index: 2;
+}
+
+.fishes div {
+    height: 5em;
+    margin: 25em 0 0 0;
+    width: auto;
+}
+
+.water_over {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+    margin: 30em 0 0 0;
+    z-index: 3;
 }
 
 .water_over * {
