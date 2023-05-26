@@ -3,6 +3,19 @@ html {
     padding: 0;
 }
 
+#overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+#overlay.show {
+    display: block;
+    background: rgba(1, 105, 128, 0.56);
+    cursor: pointer;
+}
+
 body {
     font-family: 'Iceberg', 'Iceland', sans-serif;
     background: #CDF5FE;
@@ -111,6 +124,7 @@ img.iceberg {
     height: 5em;
     margin: 25em 0 0 0;
     width: auto;
+    cursor: pointer;
 }
 
 .water_over {
