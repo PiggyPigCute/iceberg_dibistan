@@ -3,17 +3,30 @@ html {
     padding: 0;
 }
 
+p {
+    pointer-events: none;
+}
+
 #overlay {
     position: fixed;
     height: 100%;
     width: 100%;
     display: none;
+    z-index: 4;
 }
 
 #overlay.show {
     display: block;
-    background: rgba(1, 105, 128, 0.56);
+    background: rgba(0, 43, 56, 0.7);
     cursor: pointer;
+}
+
+.window {
+    display: none;
+}
+
+.opened {
+    display: block;
 }
 
 body {
@@ -46,6 +59,13 @@ p {
     border-radius: 6px;
     margin: 3%;
     padding: 3%;
+    transition: all 1s;
+    text-align: center;
+}
+
+.buttons a:hover {
+    margin: 2%;
+    padding: 2%;
 }
 
 .debut_page {
@@ -135,11 +155,13 @@ img.iceberg {
     left: 0;
     margin: 30em 0 0 0;
     z-index: 3;
+    pointer-events: none;
 }
 
 .water_over * {
     height: 30em;
     width: 100%;
+    pointer-events: none;
 }
 
 .water1 {

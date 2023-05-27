@@ -10,6 +10,7 @@ for (let fish of document.getElementsByClassName("fish")) {
         } else {
             w.add("opened")
             overlay.classList.add("show")
+            current_fish = w
         }
     }
 }
