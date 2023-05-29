@@ -149,15 +149,36 @@ img.iceberg {
     padding: 0;
     top: 0;
     left: 0;
-    margin: 30em 0 0 0;
+    margin: 20em 0 0 0;
     z-index: 2;
 }
 
-.fishes div {
+.fishes .fish {
     height: 5em;
-    margin: 25em 0 0 0;
+    margin-top: 25em;
+    margin-bottom: 0;
     width: auto;
     cursor: pointer;
+}
+
+#fish1 {
+    margin-left: 20%;
+    margin-right: 75%;
+}
+
+#fish2 {
+    margin-left: 75%;
+    margin-right: 20%;
+}
+
+#fish3 {
+    margin-left: 45%;
+    margin-right: 50%;
+}
+
+#fish4 {
+    margin-left: 10%;
+    margin-right: 85%;
 }
 
 .water_over {
