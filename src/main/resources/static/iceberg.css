@@ -166,6 +166,12 @@ img.iceberg {
     margin-right: 75%;
 }
 
+#click_here {
+    position: relative;
+    left: 100%;
+    top: -50%
+}
+
 #fish2 {
     margin-left: 75%;
     margin-right: 20%;
