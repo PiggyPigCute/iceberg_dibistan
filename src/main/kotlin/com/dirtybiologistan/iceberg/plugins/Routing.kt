@@ -1,6 +1,8 @@
 package com.dirtybiologistan.iceberg.plugins
 
+import com.dirtybiologistan.iceberg.engine.proposals
 import io.ktor.server.application.*
+import io.ktor.server.freemarker.*
 import io.ktor.server.http.content.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
@@ -17,8 +19,17 @@ fun Application.configureRouting() {
         get("/index.html") {
             call.respondRedirect("/")
         }
-        static("/static") {
-            resources("static")
+        staticResources("/static", "static") {
+        }
+        get("/ask") {
+            call.respond(FreeMarkerContent("vote.ftl", mapOf(
+                "data" to IndexData(listOf(1, 2, 3)),
+                "prop0" to proposals.random(),
+                "prop1" to proposals.random()
+            ), ""))
+        }
+        get("/vote") {
+            call.respondRedirect("/ask")
         }
     }
 }

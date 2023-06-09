@@ -1,6 +1,7 @@
 package com.dirtybiologistan.iceberg.discord
 
 import com.dirtybiologistan.iceberg.discord.commands.HelpCommand
+import com.dirtybiologistan.iceberg.discord.commands.VoteCommand
 import org.javacord.api.entity.message.MessageFlag
 import org.javacord.api.event.interaction.SlashCommandCreateEvent
 import org.javacord.api.listener.interaction.SlashCommandCreateListener
@@ -9,6 +10,7 @@ val commands = LinkedHashMap<String, ExecutableWithArguments>()
 
 fun loadAllCommands() {
     HelpCommand()
+    VoteCommand()
     println("Loaded ${commands.size} commands")
     for (command in commands) {
         println("Loaded command ${command.key}")

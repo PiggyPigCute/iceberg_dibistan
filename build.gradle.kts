@@ -23,14 +23,14 @@ repositories {
 
 dependencies {
     implementation("ch.qos.logback:logback-classic:$logback_version")
-    implementation("io.ktor:ktor-server-core-jvm:2.3.0")
-    implementation("io.ktor:ktor-server-websockets-jvm:2.3.0")
-    implementation("io.ktor:ktor-server-content-negotiation-jvm:2.3.0")
-    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.0")
-    implementation("io.ktor:ktor-server-host-common-jvm:2.3.0")
-    implementation("io.ktor:ktor-server-freemarker-jvm:2.3.0")
-    implementation("io.ktor:ktor-server-tomcat-jvm:2.3.0")
+    implementation("io.ktor:ktor-server-core-jvm:2.3.1")
+    implementation("io.ktor:ktor-server-websockets-jvm:2.3.1")
+    implementation("io.ktor:ktor-server-content-negotiation-jvm:2.3.1")
+    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.1")
+    implementation("io.ktor:ktor-server-host-common-jvm:2.3.1")
+    implementation("io.ktor:ktor-server-freemarker-jvm:2.3.1")
+    implementation("io.ktor:ktor-server-tomcat-jvm:2.3.1")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
     implementation("org.javacord:javacord:3.8.0")
-    testImplementation("io.ktor:ktor-server-tests-jvm:2.3.0")
+    testImplementation("io.ktor:ktor-server-tests-jvm:2.3.1")
 }

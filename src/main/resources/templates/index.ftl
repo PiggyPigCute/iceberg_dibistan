@@ -1,4 +1,4 @@
-<html>
+<html lang="fr">
 <body>
 <h1>Items:</h1>
 <#list data.items as item>
