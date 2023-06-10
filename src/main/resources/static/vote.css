@@ -11,3 +11,33 @@
     min-height: 30%;
     min-width: 30%;
 }
+
+.prop p {
+    background: #016980;
+    display: table;
+    border-radius: 6px;
+    margin: 3%;
+    padding: 3%;
+    transition: all 1s;
+    text-align: center;
+}
+
+/*.buttons a:hover {
+    margin: 2%;
+    padding: 2%;
+}*/
+
+
+.upmenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #3D73C5;
+}
+
+.icebergmini {
+    height: 70px;
+    width: auto;
+    max-height: 5%;
+    margin: 1%;
+}

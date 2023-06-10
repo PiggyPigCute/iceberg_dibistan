@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="/static/iceberg.css" type="text/css">
 </head>
 <body>
+<div class="upmenu">
+    <img class="icebergmini" alt="icebergmini" src="/static/iceberg.png"/>
+</div>
 <div id="props">
     <div class="prop" id="prop0" style="background-image: url('/static/prop/${prop0}.png'), url('/static/default0.jpg')">
         <p>${prop0}</p>
