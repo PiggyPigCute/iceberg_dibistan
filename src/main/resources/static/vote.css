@@ -1,4 +1,13 @@
 #props {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 50%;
 }
 
+.prop {
+    background-position: center;
+    min-height: 30%;
+    min-width: 30%;
+}
