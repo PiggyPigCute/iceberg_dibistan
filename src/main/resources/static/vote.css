@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
     min-height: 90vh;
 }
 
@@ -14,9 +14,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 45%;
-    min-width: 40%;
-    width: 50%;
+    min-height: 45vh;
+    min-width: 40vw;
+    width: 50vw;
     height: 90vh;
     transition: all 1s;
 }
@@ -31,9 +31,64 @@ body {
 }
 
 .prop:hover {
-    width: 60%;
+    width: 60vw;
 }
 
+.uptext {
+    text-align: center;
+    width: 80vw;
+    margin-right: 10vw;
+}
+
+.uptext h1 {
+    color: #FFFFFF;
+    font-size: 2vw;
+    max-font-size: 1.5vh;
+    margin: 0.5vh;
+    padding: 0;
+}
+
+.uptext h2 {
+    color: #FFFFFF;
+    font-size: 1.5vw;
+    max-font-size: 1.5vh;
+    margin: 0.5vh;
+    padding: 0;
+}
+
+.passer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.passer .passer_but {
+    background: #016980;
+    display: table;
+    border-radius: 6px;
+    margin: 3%;
+    padding: 3%;
+    text-align: center;
+    min-width: 20vw;
+    transition: all 1s;
+}
+
+.passer .passer_but:hover {
+    min-width: 40vw;
+    margin: 2%;
+    padding: 2%;
+}
+
+.passer_but p {
+    vertical-align: middle;
+    margin: auto;
+    display: table-cell;
+    height: 100%;
+}
 
 .upmenu {
     display: flex;
