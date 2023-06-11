@@ -1,15 +1,24 @@
+body {
+    height: 100vh;
+}
+
 #props {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     width: 100%;
-    min-height: 50%;
+    min-height: 90vh;
 }
 
 .prop {
     background-position: center;
-    min-height: 30%;
-    min-width: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 45%;
+    min-width: 40%;
+    width: 50%;
+    height: 90vh;
+    transition: all 1s;
 }
 
 .prop p {
@@ -18,14 +27,12 @@
     border-radius: 6px;
     margin: 3%;
     padding: 3%;
-    transition: all 1s;
     text-align: center;
 }
 
-/*.buttons a:hover {
-    margin: 2%;
-    padding: 2%;
-}*/
+.prop:hover {
+    width: 60%;
+}
 
 
 .upmenu {
@@ -33,11 +40,12 @@
     justify-content: space-between;
     width: 100%;
     background: #3D73C5;
+    height: 10vh;
 }
 
 .icebergmini {
     height: 70px;
     width: auto;
-    max-height: 5%;
-    margin: 1%;
+    max-height: 8vh;
+    margin: 1vh;
 }
