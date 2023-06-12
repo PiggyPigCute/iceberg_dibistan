@@ -21,8 +21,13 @@
     </div>
 </div>
 <div class="passer">
-    <div class="passer_but">
-        <p>Passer sans répondre</p>
+    <div class="downmenu">
+        <div class="passer_but">
+            <p>Passer sans répondre</p>
+        </div>
+        <div class="passer_but">
+            <p>Les deux sont inconus</p>
+        </div>
     </div>
 </div>
 <script type="text/javascript" src="/static/vote.js"></script>

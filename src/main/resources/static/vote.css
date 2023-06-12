@@ -18,7 +18,7 @@ body {
     min-width: 40vw;
     width: 50vw;
     height: 90vh;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
 .prop p {
@@ -66,7 +66,13 @@ body {
     bottom: 0;
 }
 
-.passer .passer_but {
+.downmenu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.downmenu .passer_but {
     background: #016980;
     display: table;
     border-radius: 6px;
@@ -74,10 +80,10 @@ body {
     padding: 3%;
     text-align: center;
     min-width: 20vw;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
-.passer .passer_but:hover {
+.downmenu .passer_but:hover {
     min-width: 40vw;
     margin: 2%;
     padding: 2%;
