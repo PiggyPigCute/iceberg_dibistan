@@ -14,18 +14,18 @@
 </div>
 <div id="props">
     <div class="prop" id="prop0" style="background-image: url('/static/prop/${prop0}.png'), url('/static/default0.jpg')">
-        <p>${prop0}</p>
+        <p id="propp0">${prop0}</p>
     </div>
     <div class="prop" id="prop1" style="background-image: url('/static/prop/${prop1}.png'), url('/static/default1.jpg')">
-        <p>${prop1}</p>
+        <p id="propp1">${prop1}</p>
     </div>
 </div>
 <div class="passer">
     <div class="downmenu">
-        <div class="passer_but">
+        <div class="passer_but" id="passr">
             <p>Passer sans répondre</p>
         </div>
-        <div class="passer_but">
+        <div class="passer_but" id="passi">
             <p>Les deux sont inconus</p>
         </div>
     </div>
