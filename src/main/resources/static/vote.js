@@ -31,8 +31,10 @@ ws.onmessage = function (event) {
     let txt0 = data.prop0
     let txt1 = data.prop1
     // remplace les espaces par des underscores, les accents par des lettres sans accents et le reste des caractères spéciaux par des w
-    txt0 = txt0.replace(/ /g, "_").normalize("NFD").replace(/[^a-zA-Z0-9]/g, "w")
-    txt1 = txt1.replace(/ /g, "_").normalize("NFD").replace(/[^a-zA-Z0-9]/g, "w")
+    txt0 = txt0.replace(/ /g, "_").normalize("NFD").replace(/[^a-zA-Z0-9_]/g, "w")
+    txt1 = txt1.replace(/ /g, "_").normalize("NFD").replace(/[^a-zA-Z0-9_]/g, "w")
+    console.log(txt0)
+    console.log(txt1)
     prop0.setAttribute("style", "background-image: url('/static/prop/" + txt0 + ".png'), url('/static/default0.jpg')")
     prop1.setAttribute("style", "background-image: url('/static/prop/" + txt1 + ".png'), url('/static/default1.jpg')")
     propp0.textContent = data.prop0
