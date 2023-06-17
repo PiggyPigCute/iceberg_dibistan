@@ -35,8 +35,8 @@ ws.onmessage = function (event) {
     txt1 = txt1.replace(/ /g, "_").normalize("NFD").replace(/[^a-zA-Z0-9_]/g, "w")
     console.log(txt0)
     console.log(txt1)
-    prop0.setAttribute("style", "background-image: url('/static/prop/" + txt0 + ".png'), url('/static/default0.jpg')")
-    prop1.setAttribute("style", "background-image: url('/static/prop/" + txt1 + ".png'), url('/static/default1.jpg')")
+    prop0.setAttribute("style", "background-image: url('/static/prop/" + txt0 + ".png'), url('/static/prop/" + txt0 + ".jpg'), url('/static/default0.jpg')")
+    prop1.setAttribute("style", "background-image: url('/static/prop/" + txt1 + ".png'), url('/static/prop/" + txt1 + ".jpg'), url('/static/default1.jpg')")
     propp0.textContent = data.prop0
     propp1.textContent = data.prop1
 }

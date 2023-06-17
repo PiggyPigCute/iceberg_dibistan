@@ -13,10 +13,12 @@
     </div>
 </div>
 <div id="props">
-    <div class="prop" id="prop0" style="background-image: url('/static/prop/${prop0}.png'), url('/static/default0.jpg')">
+    <div class="prop" id="prop0"
+         style="background-image: url('/static/prop/${prop0}.png'), url('/static/prop/${prop0}.jpg'), url('/static/default0.jpg')">
         <p id="propp0">${prop0}</p>
     </div>
-    <div class="prop" id="prop1" style="background-image: url('/static/prop/${prop1}.png'), url('/static/default1.jpg')">
+    <div class="prop" id="prop1"
+         style="background-image: url('/static/prop/${prop1}.png'), url('/static/prop/${prop1}.jpg'), url('/static/default1.jpg')">
         <p id="propp1">${prop1}</p>
     </div>
 </div>
