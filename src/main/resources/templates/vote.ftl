@@ -13,6 +13,7 @@
     </div>
 </div>
 <div id="props">
+    <!-- Images libres de droits pour la plupart. Les détails sont présents sur le serveur discord de la RPD où le projet à été créé. Certaines sont prises sur pixabay, d'autres réalisées par nous et d'autres par IA -->
     <div class="prop" id="prop0"
          style="background-image: url('/static/prop/${prop0}.png'), url('/static/prop/${prop0}.jpg'), url('/static/default0.jpg')">
         <p id="propp0">${prop0}</p>
