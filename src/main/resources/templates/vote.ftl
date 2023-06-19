@@ -6,7 +6,7 @@
 </head>
 <body>
 <div class="upmenu">
-    <img class="icebergmini" alt="icebergmini" src="/static/iceberg.png"/>
+    <a href="/"><img class="icebergmini" alt="icebergmini" src="/static/iceberg.png"/></a>
     <div class="uptext">
         <h1>Lequel des deux connaissez-vous le mieux ?</h1>
         <h2>Son origine, ses secrets, ... et aujourd'hui ?</h2>

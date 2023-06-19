@@ -24,8 +24,8 @@ p {
 .window {
     display: none;
     background-color: #CDF5FE;
-    margin: 5%;
-    padding: 5%;
+    margin: 5svh 5svw 5svh 5svw;
+    padding: 5svh 5svw 5svh 5svw;
     border-radius: 10px;
 }
 
@@ -76,7 +76,7 @@ a {
     border-radius: 6px;
     margin: 3%;
     padding: 3%;
-    transition: all 1s;
+    transition: all 0.3s;
     text-align: center;
 }
 
@@ -86,7 +86,7 @@ a {
 }
 
 .debut_page {
-    margin-top: 3em;
+    margin-top: 10svh;
     justify-content: center;
     align-items: center;
     min-width: 200px;
@@ -111,7 +111,7 @@ h2 {
 
 .iceberg_parent {
     position: absolute;
-    margin: 10em 0 0 0;
+    margin: 20svh 0 0 0;
     top: 0;
     left: 0;
     /* in the background */
@@ -121,8 +121,8 @@ h2 {
 
 .water_before {
     position: absolute;
-    margin-top: 31em;
-    height: 1em;
+    margin-top: 52svh;
+    height: 2svh;
     width: 100%;
     background: #66E3FFCC;
     z-index: -2;
@@ -133,15 +133,15 @@ img.iceberg {
     min-width: 50%;
     width: auto;
     max-width: 95%;
-    min-height: 120em;
+    min-height: 170svh;
     height: auto;
-    max-height: 135em;
+    max-height: 220svh;
 }
 
 .water_after {
     position: absolute;
-    margin-top: 30em;
-    height: 1em;
+    margin-top: 50svh;
+    height: 2svh;
     width: 100%;
     background: #66E3FFCC;
     top: 0;
@@ -153,16 +153,24 @@ img.iceberg {
     padding: 0;
     top: 0;
     left: 0;
-    margin: 20em 0 0 0;
+    margin: 35svh 0 0 0;
+    max-height: 215svh;
+    overflow: hidden;
     z-index: 2;
 }
 
 .fishes .fish {
-    height: 5em;
-    margin-top: 25em;
+    height: 10svh;
+    margin-top: 40svh;
     margin-bottom: 0;
     width: auto;
     cursor: pointer;
+}
+
+.fish img {
+    height: 100%;
+    width: auto;
+    max-width: 50svw;
 }
 
 #fish1 {
@@ -173,7 +181,7 @@ img.iceberg {
 #click_here {
     position: relative;
     left: 100%;
-    top: -50%
+    top: -50%;
 }
 
 #fish2 {
@@ -197,13 +205,13 @@ img.iceberg {
     padding: 0;
     top: 0;
     left: 0;
-    margin: 30em 0 0 0;
+    margin: 50svh 0 0 0;
     z-index: 3;
     pointer-events: none;
 }
 
 .water_over * {
-    height: 30em;
+    height: 50svh;
     width: 100%;
     pointer-events: none;
 }
