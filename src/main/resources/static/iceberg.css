@@ -153,15 +153,15 @@ img.iceberg {
     padding: 0;
     top: 0;
     left: 0;
-    margin: 35svh 0 0 0;
+    margin: 32svh 0 0 0;
     max-height: 215svh;
     overflow: hidden;
     z-index: 2;
 }
 
 .fishes .fish {
-    height: 10svh;
-    margin-top: 40svh;
+    height: 7svh;
+    margin-top: 43svh;
     margin-bottom: 0;
     width: auto;
     cursor: pointer;
