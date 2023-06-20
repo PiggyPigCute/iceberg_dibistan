@@ -1,4 +1,4 @@
-aux de bruit
+Taux de bruit
 Les lignes bleues et oranges
 Tâche noire & Pour un drapeau noir
 Mouvements “anarchistes” du drapeau
@@ -112,7 +112,6 @@ Historiographie du dibistan
 Archives du Dibistan
 Presse Nationale
 Discord “Quartier de la Beuverie” (rassemble tous les bars du Dibistan)
-Troupe du Pacte Sanitaire
 Recensement des tremblements de terre
 L'Offensive Libertaire
 Le Parti Impérialiste DirtyBiologistanais
@@ -307,3 +306,6 @@ Ancien Dibi
 Académie Dibiste dans Minecraft
 Union Fédérale des Etats Xali Indépendant
 Gwenn ha du (drapeau Breton) sur le Drapeau
+Le drapeau
+Les régions et les départements
+Les cartographes
